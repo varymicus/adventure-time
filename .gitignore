@@ -1,6 +1,3 @@
-# Dev documents
-*.txt
-
 # PHP error log
 php_errors.log
 
