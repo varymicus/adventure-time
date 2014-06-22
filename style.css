@@ -1,0 +1,24 @@
+.class_panel {
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+}
+
+.class_title {
+	font-weight: bold;
+	text-align: center;
+}
+
+.skill_name {
+	font-style: italic;
+}
+
+#intro {
+	text-align: center;
+}
+
+#classes {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
