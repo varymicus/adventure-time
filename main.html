@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Interactive Adventure Time CYOA</title>
+</head>
+
+<body>
+<script src="script.js" type="text/javascript"></script>
+<h1 onclick="toggleItem('intro')">The adventure begins...</h1>
+<div id='intro'>
+<p class='narration'>
+On a boring day with a heavy thunderstorm outside and nothing on the internet, a mysterious impulse draws you into ascending to your house's attic, descending to the basement, or delving into another seldom-visited place where old and strange artifacts could easily be hidden. It is here, from under a pile of other items, covered in a layer of dust, that you find an unfamiliar eldritch tome.
+</p>
+<p class='narration'>
+When you open the book, a powerful magical light shines out and you find yourself looking at a series of incredibly detailed landscapes, people, and villains of fantasy straight from another world; a world full of adventure, mystery, and danger. The first few pages of are different: instead of pictures, they concern themselves with sheets and questions, multiple-choices and boxes to fill, with enough space for you to answer. As you do so, you find that the book imprints itself upon you, becoming yours forever and something only you can use.
+<br>For this book is not a book at all, but rather a portal... and as its new owner, you have become its gatekeeper!
+</p>
+<p class='narration'>
+Every time you open the book, you are transported into the world it contains within its pages. By default only you an anything you can carry with you may pass through, although you can expand this to other people (and by extension anything <i>they</i> can carry), if you are willing to spend the points - see below. You can get back to the real world simply by willing yourself out, although other items and people you have brought with you do not always come along, if they are too far away from you or simply do not want to. There are special cases that may temporarily block you from using this ability and lock you (or your friends) into the world until you deal with them. Under no circumstances can you ever bring anything originating from this world into our reality.
+</p>
+<p class='narration'>
+On your first visit, the world appears similar to ours: it has a blue sky, green grass, trees, a bunch of inhabitants and wildlife, and so forth. However, the more you spend time in it and delve into its mysteries, the more different it reveals itself to be: magic is real, there are creatures and beings that should not or could not exist, laws of physics always give away to fantasy and wonder, and basically anything fathomable to human imagination is very likely to be found somewhere here. It is a world of endless adventure and excitements: whether you spend your time meeting its people and making friends, wandering across the grand landscapes and seeing sights, delving into its numerous danger-filled ruins or dungeons, or whatever else, the only thing certain of this land is that as long as you stay there, you will never grow bored or idle (unless you choose to just lie down and sleep or something).
+</p>
+<p class='narration'>
+As the owner of the book, you are not only the master of going to this world and back, you are also given extraordinary power and skill, enough to make yourself one of its greatest living heroes. You may acquire a domain (or several) for yourself, a number of items and artifacts, friends, or even a romantic interest, based on how you answered the questions the book asked of you. As said above, none of these can follow you to the real world - but any ability or skill you have <i>will</i> remain, aside from blatantly supernatural or physics-breaking ones such as magic. As your reputation increases, people will flock to you to seek help in various problems, from trivial to deadly serious - in cases more towards the latter, there can be consequences in not helping.
+</p>
+<p class='narration'>
+When you are not inside, the book's world continues to advance in the same time as the real world's. Likewise, when you are inside, real time keeps on going and can eventually end up with hilarity for you if you spend too much time out of it. If you die in the book, you are immediately kicked out into the real world, unharmed, while the book itself disappears, never to be seen again: any of your friends dying will not result in the book disappearing, but they can nonetheless never again go through it. Should its world be destroyed or forever corrupted beyond recognition and repair (see some of the ancient evils right at the bottom), it likewise vanishes from the real world.
+</p>
+</div>
+
+<hr>
+<p class='narration'>
+The first few pages of the book concern yourself: what do you want to be? What do you wish you knew or could do, and how would you like to improve yourself? To put it in different words, this is where you
+</p>
+<h1 onclick="toggleItem('classes')">Choose your class</h1>
+<div id="classes">
+<p class='narration'>
+There are six classes for you to pick from, heroic archetypes and ideals for you to strive upon. Each of them will grant you a different set of starting equipment, tools, accessories, and clothes. Furthermore, each has three basic attributes to which you get a number of points to allocate: any skills and other abilities associated with the class are based on these three, but we only really go into detail with the magical ones - anything we do not touch upon should be brought up in your post.
+</p>
+<p class='narration'>
+You get to allocate one to five points in each attribute: one point represents a beginner or a novice, while five is a true master, the peak of human potential. If the attribute is associated with skills, you can choose as many skills as you have points: for example, putting just one point into the Warrior's weapon skill will make you a novice with a single weapon, but putting five points has you become a grandmaster in five weapons of your choice.
+</p>
+<p class='narration'>
+You begin with a single point in all three attributes of your primary class, after which you get nine more points to put wherever you like, up to the maximum of five. In addition, each class is close enough in function with another one that you can learn a little bit of it just by having the other class as your main: this Synergy class, though not giving you its equipment or the single starting point, allows you to allocate six points wherever you like - they max out at three, however, because another class can only teach you so much. The Warrior and Rogue classes, being so everpresent and quintessential, are the only ones that allow you to choose one out of two classes to Synergy with - one of the two being each other. Finally, all other four classes are something you have been considered to have dabbled into, as a hobby or otherwise not particularly serious; you have three points to place for each of them, up to two per attribute, simple dabbling not really giving you much real knowledge or mastery.
+</p>
+<p class='narration'>
+Of course, though this will give you a bunch of skills and abilities to start your adventure with, you will most certainly learn more during your travels into the world: your skills will improve, your abilities increase, and occasionally even the basic attributes will grow. It is even possible to go beyond the human maximum of five, although this is of course extremely difficult (especially in the classes outside the primary), and typically requires you going on a specific quest. Ten points is the absolute maximum, however: at that point you start to surpass your humanity entirely and become godlike, and no true god of this world will allow that.
+</p>
+<p class='narration'>
+Finally, the world around you will shape and mold itself based on your abilities, in order to give you just the right amount of challenge without becoming insurmountable or frustrating. If you are a warrior with maxed out weapon skill and physique, you will most certainly see plenty of things that require you to use your mighty physical abilities, and find a lot of magic weaponry to use. There is no way to gimp yourself: forgoing the use of firearms and going instead with a simple knife, or bare hands, or even with something blatantly ridiculous (like a yo-yo) will simply see the world react accordingly.
+</p>
+<p class='narration'>
+<table id='classes'>
+    <tr>
+        <td id='warrior' class='class_panel'>
+            <p class='class_title'>Warrior</p>
+            <p class='btn_primary_class_choose'>
+                <button onclick='choose_primary_class("warrior","rogue","ranger")'>Set as Primary Class</button>
+            </p>
+            <p class='btn_primary_class_revoke'>
+                <button onclick='reset_class()'>Reset Primary Class</button>
+            </p>
+            <p class='btn_synergy_class_choose'>
+                <button onclick='choose_synergy_class("warrior")'>Set as Synergy Class</button>
+            </p>
+            <p class='btn_synergy_class_revoke'>
+                <button onclick='revoke_synergy_class("warrior")'>Choose</button>
+            </p>
+            <p class='class_desc'>
+                You are one of this realm's greatest warriors, with very few equals in martial skill. You begin with one of each weapon you choose to be skilled in, one of which will be of moderate magical power. In addition, you can start with armor and/or shield if you like: anything from leather to plate armor and in between. Or if you choose to be skilled in modern weaponry, you can pick bullet-proof vests, riot shields, or even power armor.
+            </p>
+            <p class='skill' id='weapon_skill'>
+                <span class='skill_name'>Weapon Skill: </span>
+                The cornerstone of the warrior's martial supremacy, this skill allows you to learn the use of a number of weapons of your choice. The more points you have, the easier you can pick up entirely new weapons and learn how to use them.
+            </p>
+            <p class='skill_count' id='weapon_skill_count'></p>
+            <p class='skill_btns'>
+                <button onclick='sell_skill("warrior","weapon_skill_count")'>-</button>
+                <button onclick='buy_skill("warrior","weapon_skill_count")'>+</button>
+            </p>
+            <p class='skill' id='physique'>
+                <span class='skill_name'>Physique: </span>
+                This attribute will improve your physical abilities. It allows you to not only lift more and hit harder, but also take more damage and endure longer.
+            </p>
+            <p class='skill_count' id='physique'>
+            </p>
+            <p class='skill' id='willpower_count'>
+                <span class='skill_name'>Willpower: </span>
+                Your raw mental strength - not intelligence or cunning, but just how far you can be pushed before you give up, how difficult you are to influence or coerce (mundanely or magically), and how powerful your presence is. Raising this beyond the normal five points will allow you to crush the spirits of the weak-willed, without ever having to fight them at all.
+            </p>
+            <p class='skill_count' id='willpower_count'>
+            </p>
+        </td>
+        <td id='scientist' class='class_panel'>
+            <p class='class_title'>Scientist</p>
+            <p class='btn_primary_class_choose'>
+                <button onclick='choose_primary_class("scientist","wizard")'>Set as Primary Class</button>
+            </p>
+            <p class='btn_primary_class_revoke'>
+                <button onclick='reset_class()'>Revoke</button>
+            </p>
+            <p class='class_desc'>
+                Your knowledge of mankind's most advanced science is almost without peer, in this world or the other. You begin your adventure with a number of simple tools and gadgets related to your fields of study. If you buy a Domain, however, it comes with a number of laboratories and workshops that you can put to use. In addition, thought it has been stated that the new world's laws of physics do not always function as you think they should, you will find that anything you actually have studied and know as a fact is far more solid and resistant to fluctuation - which isn't always good.
+            </p>
+            <p class='skill' id='education'>
+                <span class='skill_name'>Education: </span>
+                You will instantly learn any field available in the world (or enhance one you already know), basically anything you can earn a doctorate or mastery in - as well as make it easier to learn new ones. Though you cannot start with them, you can later pick up the education of a bunch of native sciences, except for magic and that kind of stuff, which is a different class altogether.
+            </p>
+            <p class='skill' id='wits'>
+                <span class='skill_name'>Wits: </span>
+                It's not always what you know, but how flexible that knowledge is. This attribute governs your problem-solving skills, thinking outside the box, getting Eureka moments, and inventing new theories and building strange contraptions out of the sciences you know.
+            </p>
+            <p class='skill' id='insight'>
+                <span class='skill_name'>Insight: </span>
+                It's a strange new world, where things do not oftern work at all how you think they should. This is your mental clarity, the ability to see the cogs behind the machine to to speak, and how the physics and sciences here correlate to what you already know. At higher levels, you may even learn how to directly manipulate them.
+            </p>
+        </td>
+        <td id='rogue' class='class_panel'>
+            <p class='class_title'>Rogue</p>
+            <p class='btn_primary_class_choose'>
+                <button onclick='choose_primary_class("rogue","warrior","bard")'>Set as Primary Class</button>
+            </p>
+            <p class='btn_primary_class_revoke'>
+                <button onclick='reset_class()'>Revoke</button>
+            </p>
+            <p class='class_desc'>
+                A thief, a diplomat, and/or a spy, your cunning, persuasiveness, and stealth are second to none. In the beginning you have an expensive suit or dress, all the spy gadgets you could imagine (adjusted to the tech level you choose, of course), a few small weapons (daggers, crossbow, silenced pistol, etc.), and a sports vehicle to go around with (or a fancy wagon).
+            </p>
+            <p class='skill' id='dexterity'>
+                <span class='skill_name'>Dexterity: </span>
+                How well you can pick locks, how hard you are to see, how easily you scale walls, how convincing your forged documents are, and a whole number of other rogue skills are related to this attribute. If you manage to get over the human limits of five points, you'll basically become Carmen Sandiego.
+            </p>
+            <p class='skill' id='guile'>
+                <span class='skill_name'>Guile: </span>
+                Thinking fast on the fly is an important ability to have for one such as you, and this attribute improves it. You can get over setbacks and complications and adjust your plans quickly. This skill also allows you to see things missed by others, such as vital clues, secret doors, or glowy weak points.
+            </p>
+            <p class='skill' id='charisma'>
+                <span class='skill_name'>Charisma: </span>
+                Just how much of a people person you are. How well you can persuade or deceive the others, maintain your cover and disguise, get away with it all, and still have people like you and think you're awesome by the end. Subtle intimidation ("Shame if something happened...") goes under this skill too.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td id='ranger' class='class_panel'>
+            <p class='class_title'>Ranger</p>
+            <p class='class_desc'>
+                The woodsman, beastmaster, and tracker, you're a real badass that takes no shit from anyone. Your starting equipment will depend on the desired tech level: you will begin with either a sword and a bow, leather armor, and a green sneaky cloak - or with a rifle and a pistol, a flak vest, a gas mask, and a long trenchcoat. Either way, you will also get a knife and some other basic tools to go around with.
+            </p>
+            <p class='skill' id='nature_lore'>
+                <span class='skill_name'>Nature Lore: </span>
+                This attribute deals with your knowledge of all-around nature stuff, such as plants, weather and climate, terrain and geography, tracking, and the numerous creatures and people living therein. For every two points, choose a "favoured terrain", of which you know a lot more.
+            </p>
+            <p class='skill' id='beastmaster'>
+                <span class='skill_name'>Beastmaster: </span>
+                For the first point in this attribute (which is free if this is your primary class, of course), you will receive a permanent animal companion. The animal is enhanced to human intelligence and longer lifespan, and is considered a Bro, although its own skillset is somewhat limited. Otherwise, any point put here will enhance your dealings with animals, how well you can train and command them, and how they see you in general.
+            </p>
+            <p class='skill' id='nature_magic'>
+                <span class='skill_name'>Nature Magic: </span>
+                Teaches you the use of a number of nature-related magical disciplines, as detailed in the "magic" section. They are somewhat weaker and much more subtle than anything a wizard could get, often making it unclear if any magic was used at all.
+            </p>
+        </td>
+        <td id='wizard' class='class_panel'>
+            <p class='class_title'>Wizard</p>
+            <p class='class_desc'>
+                A true master of the arcane, you are privy of such secrets that few would ever comprehend. Sense of right or wrong optional. You begin your adventure with a robe, your trusty spellbook, and a number of magical scrolls, wands, and other tools. If you start with a Domain, it comes with a library and a magical laboratory. You will also get a familiar; a cat, raven, imp, or similar, an intelligent little creature capable of speech, that goes with you everywhere and qualifies as a Bro.
+            </p>
+            <p class='skill' id='arcane_knowledge'>
+                <span class='skill_name'>Arcane Knowledge: </span>
+                The bread and butter of this class, this attribute details just what magics you know and how good you are at them. Your spells range from subtle to extremely flashy, and the more powerful ones are powerful indeed - up to worid-changing levels with the ones beyond five points initially available to you. Refer to the "magic" section for the detailed list.
+            </p>
+            <p class='skill' id='spellcraft'>
+                <span class='skill_name'>Spellcraft: </span>
+                Determines just how flexible you can be with your spells, to what extent you can shape and mold them to something different, and how good you are at coming up with your own spells. Metamagic, in other words. Can also be applied to Ranger's Nature Magic, though to lesser extent.
+            </p>
+            <p class='skill' id='memory'>
+                <span class='skill_name'>Memory: </span>
+                How many spells you can hold in your head at once, and how much you cak cast them before you need to rest or consult your book again. Naturally, it has a number of applications for nonmagical matters as well.
+            </p>
+        </td>
+        <td id='bard' class='class_panel'>
+            <p class='class_title'>Bard</p>
+            <p class='class_desc'>
+            You are the star! You are recognized as one of the greatest musicians, artists, or entertainers in this new world. You begin with the musical instruments or tools that you choose to be skilled in: if you start with a Domain, it will also come with a studio for you to do all the work and creation stuff in, as well as a fancy queen-sized bed and a trophy room.
+            </p>
+            <p class='skill' id='schools_of_art'>
+                <span class='skill_name'>Schools of Art: </span>
+                Governs not just musical instruments, but any type of entertainment: arts, comics, poetry and oratory, literature, filmmaking, and so forth. You can choose a mash-up of any that you like, as with the usual rules, and it is easier for you to learn more of them later.
+            </p>
+            <p class='skill' id='magnetism'>
+                <span class='skill_name'>Magnetism: </span>
+                The other thing bards are known for. Determines how big your fanbase is, how attractive you are, and how rarely you sleep alone (also covers Trap Sense). Later, especially on 5+ points, you will basically have a cult of personality of your own, and could do decidedly non-bard stuff like become a warlord or conqueror.
+            </p>
+            <p class='skill' id='legend_lore'>
+                <span class='skill_name'>Legend Lore: </span>
+                Being a bard, you've also ended up knowing a little bit of everything, and this attribute reflects that. It gives you little bits of random knowledge and lore regarding this world, even of matters that would typically belong to some other class. In addition, every three points put here will give you an extra point that you can put in any attribute of any other class (with the usual limitations).
+            </p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

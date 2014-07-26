@@ -6,15 +6,17 @@ Created by Varymicus for /tg/
 Based on the image CYOA (see "original" folder)
 
 --VERSION HISTORY--
--v0.1a published 2014-06-22=
+-v0.2a published 2014-07-26
+Refactoring from PHP/MySQL to HTML5/JS
+Class functionality expanded
+-v0.1a published 2014-06-22
 First published build of the site.
 Foundations of class section and some intro text added.
 
 --PREFACE--
-Heya, /tg/. This is my second attempt at something like this, the first being the Magical Realm CYOA. I decided to use PHP and MySQL to support more dynamic content; hopefully it pans out - it's been fun to learn at any rate. If you have any tips, comments, questions, or just plain vitriol, send it to cyoafeedback@gmail.com.
+Heya, /tg/. This is my second attempt at something like this, the first being the Magical Realm CYOA. I initially tried to use PHP and MySQL to support more dynamically generated content, but abandoned that approach for ease of coding and faster response times (client-side vs. post-back). If you have any tips, comments, questions, or just plain vitriol, send it to cyoafeedback@gmail.com.
 
 --REQUIREMENTS--
 A modern browser is recommended.
-This site makes use of PHP and CSS.
+This site makes use of Javascript and CSS.
 No effort has yet been made to ensure browser compatibility.
-To host the site, a PHP-supportive server and MySQL server are needed.

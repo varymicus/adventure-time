@@ -1,7 +1,8 @@
 .class_panel {
-	width: 31%;
-	float: left;
-	margin-right: 2%;
+	width: 33%;
+	vertical-align: top;
+	border: 1px solid black;
+	padding: 1%;
 }
 
 .class_title {
@@ -21,4 +22,95 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 95%;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.narration {
+	text-align: center;
+	font-size: 1em;
+}
+
+.infocus {
+	display: block;
+}
+
+.nodisplay {
+	display: none;
+}
+
+.nonarration {
+	display: none;
+}
+
+.btn_primary_class_choose {
+    text-align: center;
+}
+
+.btn_primary_class_revoke {
+    display: none;
+}
+
+.btn_synergy_class_choose {
+    display: none;
+}
+
+.btn_synergy_class_revoke {
+    display: none;
+}
+
+.primary_class {
+	width: 33%;
+	vertical-align: top;
+	border: 1px solid black;
+	padding: 1%;
+    background-color: #22CC33;
+}
+
+.primary_class p.btn_primary_class_choose {
+    display: none;
+}
+
+.primary_class p.btn_primary_class_revoke {
+    text-align: center;
+    display: block;
+}
+
+.synergy_class {
+	width: 33%;
+	vertical-align: top;
+	border: 1px solid black;
+	padding: 1%;
+    background-color: #116655;
+}
+
+.synergy_class p.btn_primary_class_choose {
+    display: none;
+}
+
+.synergy_class p.btn_synergy_class_choose {
+    text-align: center;
+    display: block;
+}
+
+.other_class {
+	width: 33%;
+	vertical-align: top;
+	border: 1px solid black;
+	padding: 1%;
+    background-color: #333325;
+}
+
+.other_class p.btn_primary_class_choose {
+    display: none;
+}
+
+.skill_count {
+    float: left;
 }
